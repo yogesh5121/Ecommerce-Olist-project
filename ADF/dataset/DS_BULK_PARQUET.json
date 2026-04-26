@@ -1,0 +1,24 @@
+{
+	"name": "DS_BULK_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_PARQUET_BULK",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat(\n    'bulk/',\n     formatDateTime(utcNow(),'yyyy'), '/',\n     formatDateTime(utcNow(),'MM'), '/',\n     formatDateTime(utcNow(),'dd')\n\n)",
+					"type": "Expression"
+				},
+				"fileSystem": "source"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

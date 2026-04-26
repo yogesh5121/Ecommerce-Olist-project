@@ -1,0 +1,63 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SNOW_BLOB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data_0_0_0.snappy.parquet",
+				"folderPath": "snow/2026/04/14",
+				"container": "snow"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "INDEX",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "ORDER_ID",
+				"type": "UTF8"
+			},
+			{
+				"name": "ORDER_ITEM_ID",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "PRODUCT_ID",
+				"type": "UTF8"
+			},
+			{
+				"name": "SELLER_ID",
+				"type": "UTF8"
+			},
+			{
+				"name": "SHIPPING_LIMIT_DATE",
+				"type": "TIMESTAMP_MILLIS"
+			},
+			{
+				"name": "PRICE",
+				"type": "DECIMAL",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "FREIGHT_VALUE",
+				"type": "DECIMAL",
+				"precision": 10,
+				"scale": 2
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,24 @@
+{
+	"name": "eventsnow",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_SNOW_ADLS_EVENT",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/snow/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/7ca870b0-4233-40af-816a-3fdab3babe93/resourceGroups/Olist_DE_DEV/providers/Microsoft.Storage/storageAccounts/olistblob",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

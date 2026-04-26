@@ -1,0 +1,24 @@
+{
+	"name": "DS_PARQUET_SNOW",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_PARQUET_SNOW",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@concat(\n    'snow/',\n     formatDateTime(utcNow(),'yyyy'), '/',\n     formatDateTime(utcNow(),'MM'), '/',\n     formatDateTime(utcNow(),'dd')\n\n)",
+					"type": "Expression"
+				},
+				"container": "snow"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,15 @@
+{
+	"name": "olistetldatafactory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "16d37fcf-be71-4547-9fe4-5a8f874342b5",
+		"tenantId": "792c24c7-d4b9-4c87-936c-3ec3c911508f"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "DS_SQL_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "olist_sellers_dataset"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

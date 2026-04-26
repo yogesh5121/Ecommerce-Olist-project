@@ -1,0 +1,17 @@
+{
+	"name": "DS_SNOW_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SNOW",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [],
+		"typeProperties": {
+			"schema": "AZURE_INTEGRATION",
+			"table": "ORDER_ITEMS_DATASET"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
