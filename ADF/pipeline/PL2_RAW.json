@@ -158,6 +158,27 @@
 									}
 								}
 							]
+						},
+						{
+							"value": "snowflake",
+							"activities": [
+								{
+									"name": "EXEC_SNOW",
+									"type": "ExecutePipeline",
+									"dependsOn": [],
+									"policy": {
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"pipeline": {
+											"referenceName": "PL_SNOWFLAW",
+											"type": "PipelineReference"
+										},
+										"waitOnCompletion": true
+									}
+								}
+							]
 						}
 					]
 				}
