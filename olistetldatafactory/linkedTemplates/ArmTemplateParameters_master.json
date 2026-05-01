@@ -1,0 +1,144 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "olistetldatafactory"
+		},
+		"DS_SNOW_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"LS_BULK_TO_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_TO_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_EXCEL_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_TO_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_BULK_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_EXCEL_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_REST_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_SQL_accountKey": {
+			"value": ""
+		},
+		"LS_SNOW_password": {
+			"value": ""
+		},
+		"LS_SNOW_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_SNOW_BLOB_connectionString": {
+			"value": ""
+		},
+		"LS_SQL_ADLS_password": {
+			"value": ""
+		},
+		"DS_SNOW_ADLS_properties_typeProperties_url": {
+			"value": "https://olistsrc001.dfs.core.windows.net/"
+		},
+		"LS_AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "olistdevecom.database.windows.net"
+		},
+		"LS_AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "olistdev"
+		},
+		"LS_AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "olistecom"
+		},
+		"LS_BULK_TO_ADLS_properties_typeProperties_url": {
+			"value": "https://olistraw001.dfs.core.windows.net/"
+		},
+		"LS_CSV_ADLS_properties_typeProperties_url": {
+			"value": "https://olistraw001.dfs.core.windows.net/"
+		},
+		"LS_CSV_TO_ADLS_properties_typeProperties_url": {
+			"value": "https://olistraw001.dfs.core.windows.net/"
+		},
+		"LS_EXCEL_ADLS_properties_typeProperties_url": {
+			"value": "https://olistraw001.dfs.core.windows.net/"
+		},
+		"LS_JSON_ADLS_properties_typeProperties_url": {
+			"value": "https://olistraw001.dfs.core.windows.net/"
+		},
+		"LS_JSON_TO_ADLS_properties_typeProperties_url": {
+			"value": "https://olistsrc001.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_ADLS_properties_typeProperties_url": {
+			"value": "https://olistsrc001.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_BULK_properties_typeProperties_url": {
+			"value": "https://olistsrc001.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_CSV_properties_typeProperties_url": {
+			"value": "https://olistsrc001.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_EXCEL_properties_typeProperties_url": {
+			"value": "https://olistsrc001.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_REST_properties_typeProperties_url": {
+			"value": "https://olistsrc001.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_SNOW_sasUri": {
+			"value": ""
+		},
+		"LS_PARQUET_SQL_properties_typeProperties_url": {
+			"value": "https://olistsrc001.dfs.core.windows.net/"
+		},
+		"LS_REST_ADLS_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/ogAuYb/olistapi"
+		},
+		"LS_SNOW_properties_typeProperties_database": {
+			"value": "DBAZURESNOW"
+		},
+		"LS_SNOW_ADLS_properties_typeProperties_url": {
+			"value": "https://olistsrc001.dfs.core.windows.net/"
+		},
+		"LS_SQL_ADLS_properties_typeProperties_server": {
+			"value": "YOGESH-ACER\\SQLEXPRESS"
+		},
+		"LS_SQL_ADLS_properties_typeProperties_database": {
+			"value": "Ecommerceproject"
+		},
+		"LS_SQL_ADLS_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"Tr_sample_csv_properties_PL1_MASTER_parameters_Trigger": {
+			"value": "Tr_sample_csv"
+		},
+		"eventsnow_properties_typeProperties_scope": {
+			"value": "/subscriptions/7ca870b0-4233-40af-816a-3fdab3babe93/resourceGroups/Olist_DE_DEV/providers/Microsoft.Storage/storageAccounts/olistblob"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
